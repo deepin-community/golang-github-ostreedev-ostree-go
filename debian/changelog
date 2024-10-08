@@ -1,5 +1,52 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-ostreedev-ostree-go (0.0+git20210805.719684c64e4f-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * Bump Standards-Version
+  * normalize fields with wrap-and-sort
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Thu, 08 Aug 2024 18:56:15 -0400
+
+golang-github-ostreedev-ostree-go (0.0+git20210805.719684c64e4f-1) experimental; urgency=medium
+
+  * Team Upload
+  * New upstream snapshot
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 16 Aug 2022 18:15:35 +0200
+
+golang-github-ostreedev-ostree-go (0.0+git20190702.759a8c1-5) unstable; urgency=medium
+
+  * Team Upload
+  * Skip upstream tests to avoid autopkgtest failures, Closes: #1007896
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 10 Apr 2022 10:02:20 -0400
+
+golang-github-ostreedev-ostree-go (0.0+git20190702.759a8c1-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 05 Feb 2021 00:18:13 +0000
+
+golang-github-ostreedev-ostree-go (0.0+git20190702.759a8c1-3) unstable; urgency=medium
+
+  * Added (Build-)Depends as required by "pkg/glibobject":
+    + libglib2.0-dev
+    + libostree-dev
+    + pkg-config
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sun, 01 Dec 2019 04:31:51 +1100
+
+golang-github-ostreedev-ostree-go (0.0+git20190702.759a8c1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Standards-Version: 4.4.1.
+
+ -- Dmitry Smirnov <onlyjob@debian.org>  Sat, 12 Oct 2019 20:58:55 +1100
+
+golang-github-ostreedev-ostree-go (0.0+git20190702.759a8c1-1) unstable; urgency=medium
+
+  * Initial release (Closes: 898689)
+
+ -- Juan Picca <jumapico@gmail.com>  Tue, 10 Sep 2019 09:12:59 +1000
