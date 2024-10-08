@@ -1,15 +1,29 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-ostreedev-ostree-go
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Standards-Version: 4.7.0
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Juan Picca <jumapico@gmail.com>, Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               golang-github-14rcole-gopopulate-dev,
+               libglib2.0-dev,
+               libostree-dev,
+               pkgconf | pkg-config
+Homepage: https://github.com/ostreedev/ostree-go
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-ostreedev-ostree-go
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-ostreedev-ostree-go.git
+XS-Go-Import-Path: github.com/ostreedev/ostree-go
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-ostreedev-ostree-go-dev
+Architecture: all
+Depends: golang-github-14rcole-gopopulate-dev,
+         libglib2.0-dev,
+         libostree-dev,
+         pkgconf | pkg-config,
+         ${misc:Depends}
+Description: Golang bindings for httt://github.com/ostreedev/ostree
+ OSTree-Go Go bindings for OSTree. Find out more about OSTree here
+ (https://github.com/ostreedev/ostree)
